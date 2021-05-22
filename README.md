@@ -4,17 +4,27 @@ Given a list of domains, you resolve them and get the IP addresses.
 
 # Installation
 
+If you want to make modifications locally and compile it, follow the instructions below:
+
 ```
 > git clone https://github.com/Josue87/resolveDomains.git
 > cd resolveDomains
 > go build
 ```
 
+If you are only interested in using the program:
+
+```
+> go get github.com/Josue87/resolveDomains 
+```
+
 # Usage
 
 ```
-> ./resolveDomains -d domainFiles.txt [-t 150] [-r 8.8.8.8:53]
+> resolveDomains -d domainFiles.txt [-t 150] [-r 8.8.8.8:53]
 ```
+
+Don't forget the ./ in front of the program name if you are compiling locally!
 
 # Example
 
@@ -33,3 +43,5 @@ Code adapted from:
 At the request of:
 
 * **Six2dez** -- [@six2dez1](https://twitter.com/six2dez1)
+
+Please feel free to modify the code or use it in your tools.
